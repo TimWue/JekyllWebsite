@@ -2,22 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kontakt</title>
+    <title>{{ page.title }}</title>
 	<link rel="stylesheet" href="/assets/css/styles.css">
 
-	<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="TimWue.github.io" />
-    <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Kontakt | TimWue.github.io</title>
-<meta name="generator" content="Jekyll v3.8.7" />
-<meta property="og:title" content="Kontakt" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/contact.html" />
-<meta property="og:url" content="http://localhost:4000/contact.html" />
-<meta property="og:site_name" content="TimWue.github.io" />
-<script type="application/ld+json">
-{"headline":"Kontakt","url":"http://localhost:4000/contact.html","@type":"WebPage","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
+	{% feed_meta %}
+    {% seo %}
 	<style type="text/css">
       #basicMap {
 	  position:absolute;
@@ -49,23 +38,13 @@
 </div>
 	<div>
 		<a href="/">
-		<img src="/assets/img/logoBig.png" class="logo" >
+		<img src="{{site.baseurl}}/assets/img/logoBig.png" class="logo" >
 
-   <div class="topnav">
-	
-		<a href="/" >Willkommen</a>
-	
-		<a href="/work.html" >Projekte</a>
-	
-		<a href="/contact.html" class="current">Kontakt</a>
-	
-</div> 
+   {% include navigation.html %}
 	</div>
 	<div class="contentDiv">
 	<div id="basicMap"></div>
-		<h1>To do ...</h1>
-
-
+		{{ content }}
 	</div>
 	
 	<div class="footer">
