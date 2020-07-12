@@ -1,0 +1,6 @@
+- name: Willkommen
+  link: /
+- name: Projekte
+  link: /work.html
+- name: Kontakt
+  link: /contact.html

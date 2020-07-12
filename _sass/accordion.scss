@@ -1,0 +1,38 @@
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #065d0e;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: 3px solid #065d0e;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #eee;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #dbdedc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
