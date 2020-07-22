@@ -2,7 +2,7 @@
   <a href="/" {% if page.url == "/" %}style="background-color: #065d0e;"{% else %} style="background-color: #333;" {% endif %}>Willkommen!</a>
   <a href="/work.html"{% if page.url == "/work.html" %}style="background-color: #065d0e;"{% else %} style="background-color: #333;" {% endif %}>Projekte</a>
   <div class="dropdown">
-    <button class="dropbtn"{% if page.url == "/contact.html" %}style="background-color: #065d0e;"{%else %} style="background-color: #333;" {% endif %}>Über Uns
+    <button class="dropbtn"{% if page.url == "/contact.html" or page.url == "/anfahrt.html" %}style="background-color: #065d0e;"{%else %} style="background-color: #333;" {% endif %}>Über Uns
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">

@@ -21,6 +21,7 @@
   color: #777;
   font-weight: bold;
   float: right;
+  
 }
 
 .active:after {
@@ -30,7 +31,8 @@
 .panel {
   padding-top: 10px;
   padding-left: 10px;
-  background-color: #dbdedc;
+ /* background-color: #dbdedc; */
+ background-color: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
